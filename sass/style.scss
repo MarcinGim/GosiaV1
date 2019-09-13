@@ -1,0 +1,146 @@
+// general
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: white;
+}
+
+.row:before,
+.row:after {
+    content:"";
+    display: table ;
+    clear: both;
+ }
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;    
+}
+
+[class*="col-"] {
+    width: 100%;
+    float: left;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.col-offset-1 {margin-left: 8.33%;}
+.col-offset-2 {margin-left: 16.66%;}
+.col-offset-3 {margin-left: 25%;}
+.col-offset-4 {margin-left: 33.33%;}
+.col-offset-5 {margin-left: 41.66%;}
+.col-offset-6 {margin-left: 50%;}
+.col-offset-7 {margin-left: 58.33%;}
+.col-offset-8 {margin-left: 66.66%;}
+.col-offset-9 {margin-left: 75%;}
+.col-offset-10 {margin-left: 83.33%;}
+.col-offset-11 {margin-left: 91.66%;}
+
+// main foto with menu 
+
+.hero-image {
+  background-image: url("https://i.ibb.co/KF1Y1JR/Bez-nazwy-1.png");
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+}
+
+.navbar-container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
+.logo {
+  float: left;
+  font-family: Circularstd,sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  padding: 14px 16px 30px 50px;
+}
+
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 11px 16px 0 30px;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 300;
+    &:after {
+      content: '';
+      width: 0px;
+      height: 3px;
+      display: block;
+      background: black;
+      transition: 300ms;
+    }
+    &:hover:after {
+      width: 100%;
+    }
+}
+
+.main-slogan {
+  font-size: 80px;
+  font-weight: 700;
+  padding: 180px 500px 0 70px;
+}
+
+.second-slogan {
+  font-size: 40px;
+  font-weight: 300;
+  padding: 10px 500px 0 70px;
+}
+
+.text-background {
+  background: white;
+  padding: 3px 3px;
+}
+
+// offer
+
+.offer-box-1 {
+  height: 200px;
+  background-color: blue;
+  margin: 0 0 0 0;
+}
+
+.offer-box-2 {
+  height: 200px;
+  background-color: green;
+  margin: 0 0 0 0;
+}
+
+.offer-box-3 {
+  height: 200px;
+  background-color: pink;
+  margin: 0 0 0 0;
+}
+
+// portfolio
+
